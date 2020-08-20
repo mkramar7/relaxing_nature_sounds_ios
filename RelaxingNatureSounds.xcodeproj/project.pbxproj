@@ -15,7 +15,7 @@
 		B50660BA24ED9ACB008D196F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50660B824ED9ACB008D196F /* LaunchScreen.storyboard */; };
 		B50660C324EDA1E5008D196F /* Cave.wav in Resources */ = {isa = PBXBuildFile; fileRef = B50660C224EDA1E5008D196F /* Cave.wav */; };
 		B50660C524EDA638008D196F /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50660C424EDA638008D196F /* AudioPlayer.swift */; };
-		B53FDFBB24EEECFF00AED9FE /* Mountain.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFBA24EEECFF00AED9FE /* Mountain.wav */; };
+		B53FDFBB24EEECFF00AED9FE /* Mountains.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFBA24EEECFF00AED9FE /* Mountains.wav */; };
 		B53FDFBD24EEED6D00AED9FE /* Birds.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFBC24EEED6D00AED9FE /* Birds.wav */; };
 		B53FDFC324EEEDF200AED9FE /* Cold winter day.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFC224EEEDF200AED9FE /* Cold winter day.wav */; };
 		B53FDFC524EEEE0200AED9FE /* Hot summer day.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFC424EEEE0200AED9FE /* Hot summer day.wav */; };
@@ -37,7 +37,7 @@
 		B50660BB24ED9ACB008D196F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B50660C224EDA1E5008D196F /* Cave.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cave.wav; sourceTree = "<group>"; };
 		B50660C424EDA638008D196F /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
-		B53FDFBA24EEECFF00AED9FE /* Mountain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Mountain.wav; sourceTree = "<group>"; };
+		B53FDFBA24EEECFF00AED9FE /* Mountains.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Mountains.wav; sourceTree = "<group>"; };
 		B53FDFBC24EEED6D00AED9FE /* Birds.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Birds.wav; sourceTree = "<group>"; };
 		B53FDFC224EEEDF200AED9FE /* Cold winter day.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Cold winter day.wav"; sourceTree = "<group>"; };
 		B53FDFC424EEEE0200AED9FE /* Hot summer day.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Hot summer day.wav"; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 				B53FDFC224EEEDF200AED9FE /* Cold winter day.wav */,
 				B53FDFC624EEEE1B00AED9FE /* Desert.wav */,
 				B53FDFC424EEEE0200AED9FE /* Hot summer day.wav */,
-				B53FDFBA24EEECFF00AED9FE /* Mountain.wav */,
+				B53FDFBA24EEECFF00AED9FE /* Mountains.wav */,
 				B53FDFCA24EEEE8D00AED9FE /* Rain.wav */,
 				B53FDFC824EEEE6A00AED9FE /* Rainforest.wav */,
 			);
@@ -179,7 +179,7 @@
 				B50660C324EDA1E5008D196F /* Cave.wav in Resources */,
 				B53FDFBD24EEED6D00AED9FE /* Birds.wav in Resources */,
 				B53FDFCB24EEEE8D00AED9FE /* Rain.wav in Resources */,
-				B53FDFBB24EEECFF00AED9FE /* Mountain.wav in Resources */,
+				B53FDFBB24EEECFF00AED9FE /* Mountains.wav in Resources */,
 				B53FDFC324EEEDF200AED9FE /* Cold winter day.wav in Resources */,
 				B53FDFC924EEEE6A00AED9FE /* Rainforest.wav in Resources */,
 				B53FDFC724EEEE1B00AED9FE /* Desert.wav in Resources */,

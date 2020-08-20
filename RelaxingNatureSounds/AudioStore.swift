@@ -15,7 +15,7 @@ struct AudioStore {
         Sound(name: "Cold winter day", audio: Bundle.main.url(forResource: "Cold winter day", withExtension: "wav")!, image: "Cold winter day"),
         Sound(name: "Desert", audio: Bundle.main.url(forResource: "Desert", withExtension: "wav")!, image: "Desert"),
         Sound(name: "Hot summer day", audio: Bundle.main.url(forResource: "Hot summer day", withExtension: "wav")!, image: "Hot summer day"),
-        Sound(name: "Mountain", audio: Bundle.main.url(forResource: "Mountain", withExtension: "wav")!, image: "Mountain"),
+        Sound(name: "Mountains", audio: Bundle.main.url(forResource: "Mountains", withExtension: "wav")!, image: "Mountains"),
         Sound(name: "Rain", audio: Bundle.main.url(forResource: "Rain", withExtension: "wav")!, image: "Rain"),
         Sound(name: "Rainforest", audio: Bundle.main.url(forResource: "Rainforest", withExtension: "wav")!, image: "Rainforest")
     ]
