@@ -11,19 +11,31 @@ import SwiftUI
 struct ContentView: View {
     let audioStore: AudioStore
     
+    @State private var currentlyPlaying: String = ""
+    
     var body: some View {
         List {
-            Section(header: Text("Sounds of nature")) {
-                ForEach(audioStore.allSounds, id: \.self) { sound in
-                    Button(action: {
-                        AudioPlayer.shared.playSound(sound.audio)
-                    }) {
-                        //Image("Cave").frame(width: 32.0, height: 32.0)
+            ForEach(audioStore.allSounds, id: \.self) { sound in
+                Button(action: {
+                    self.currentlyPlaying = sound.id
+                    AudioPlayer.shared.playSound(sound.audio)
+                }) {
+                    ZStack {
+                        Image("Cave")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .opacity(self.currentlyPlaying == sound.id ? 1 : 0.5)
+                        
                         Text("\(sound.name)")
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
                     }
+                    .padding(.bottom, 5)
+                    .listRowInsets(EdgeInsets())
                 }
+                .buttonStyle(PlainButtonStyle())
             }
-        }.listStyle(GroupedListStyle())
+        }
     }
 }
 
