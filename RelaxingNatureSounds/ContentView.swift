@@ -9,13 +9,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    let audioStore: AudioStore
+    
     var body: some View {
-        Text("Hello, World!")
+        List {
+            Section(header: Text("Sounds of nature")) {
+                ForEach(audioStore.allSounds, id: \.self) { sound in
+                    Button("\(sound.name)") {
+                        AudioPlayer.shared.playSound(sound.audio)
+                    }
+                }
+            }
+        }.listStyle(GroupedListStyle())
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(audioStore: AudioStore())
     }
 }

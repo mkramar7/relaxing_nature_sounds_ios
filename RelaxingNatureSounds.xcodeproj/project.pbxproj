@@ -13,6 +13,17 @@
 		B50660B424ED9ACB008D196F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B50660B324ED9ACB008D196F /* Assets.xcassets */; };
 		B50660B724ED9ACB008D196F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B50660B624ED9ACB008D196F /* Preview Assets.xcassets */; };
 		B50660BA24ED9ACB008D196F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50660B824ED9ACB008D196F /* LaunchScreen.storyboard */; };
+		B50660C324EDA1E5008D196F /* Cave.wav in Resources */ = {isa = PBXBuildFile; fileRef = B50660C224EDA1E5008D196F /* Cave.wav */; };
+		B50660C524EDA638008D196F /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50660C424EDA638008D196F /* AudioPlayer.swift */; };
+		B53FDFBB24EEECFF00AED9FE /* Mountain.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFBA24EEECFF00AED9FE /* Mountain.wav */; };
+		B53FDFBD24EEED6D00AED9FE /* Birds.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFBC24EEED6D00AED9FE /* Birds.wav */; };
+		B53FDFC324EEEDF200AED9FE /* Cold winter day.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFC224EEEDF200AED9FE /* Cold winter day.wav */; };
+		B53FDFC524EEEE0200AED9FE /* Hot summer day.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFC424EEEE0200AED9FE /* Hot summer day.wav */; };
+		B53FDFC724EEEE1B00AED9FE /* Desert.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFC624EEEE1B00AED9FE /* Desert.wav */; };
+		B53FDFC924EEEE6A00AED9FE /* Rainforest.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFC824EEEE6A00AED9FE /* Rainforest.wav */; };
+		B53FDFCB24EEEE8D00AED9FE /* Rain.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFCA24EEEE8D00AED9FE /* Rain.wav */; };
+		B53FDFCF24EEEF4400AED9FE /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FDFCE24EEEF4400AED9FE /* Sound.swift */; };
+		B53FDFD124EEEFC100AED9FE /* AudioStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FDFD024EEEFC100AED9FE /* AudioStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,17 @@
 		B50660B624ED9ACB008D196F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B50660B924ED9ACB008D196F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B50660BB24ED9ACB008D196F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B50660C224EDA1E5008D196F /* Cave.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cave.wav; sourceTree = "<group>"; };
+		B50660C424EDA638008D196F /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		B53FDFBA24EEECFF00AED9FE /* Mountain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Mountain.wav; sourceTree = "<group>"; };
+		B53FDFBC24EEED6D00AED9FE /* Birds.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Birds.wav; sourceTree = "<group>"; };
+		B53FDFC224EEEDF200AED9FE /* Cold winter day.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Cold winter day.wav"; sourceTree = "<group>"; };
+		B53FDFC424EEEE0200AED9FE /* Hot summer day.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Hot summer day.wav"; sourceTree = "<group>"; };
+		B53FDFC624EEEE1B00AED9FE /* Desert.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Desert.wav; sourceTree = "<group>"; };
+		B53FDFC824EEEE6A00AED9FE /* Rainforest.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Rainforest.wav; sourceTree = "<group>"; };
+		B53FDFCA24EEEE8D00AED9FE /* Rain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Rain.wav; sourceTree = "<group>"; };
+		B53FDFCE24EEEF4400AED9FE /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		B53FDFD024EEEFC100AED9FE /* AudioStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,10 @@
 		B50660AC24ED9AC8008D196F /* RelaxingNatureSounds */ = {
 			isa = PBXGroup;
 			children = (
+				B50660C424EDA638008D196F /* AudioPlayer.swift */,
+				B53FDFD024EEEFC100AED9FE /* AudioStore.swift */,
+				B53FDFCE24EEEF4400AED9FE /* Sound.swift */,
+				B50660C124ED9B57008D196F /* Sounds */,
 				B50660AD24ED9AC8008D196F /* AppDelegate.swift */,
 				B50660AF24ED9AC8008D196F /* SceneDelegate.swift */,
 				B50660B124ED9AC8008D196F /* ContentView.swift */,
@@ -73,6 +99,21 @@
 				B50660B624ED9ACB008D196F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B50660C124ED9B57008D196F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B53FDFBC24EEED6D00AED9FE /* Birds.wav */,
+				B50660C224EDA1E5008D196F /* Cave.wav */,
+				B53FDFC224EEEDF200AED9FE /* Cold winter day.wav */,
+				B53FDFC624EEEE1B00AED9FE /* Desert.wav */,
+				B53FDFC424EEEE0200AED9FE /* Hot summer day.wav */,
+				B53FDFBA24EEECFF00AED9FE /* Mountain.wav */,
+				B53FDFCA24EEEE8D00AED9FE /* Rain.wav */,
+				B53FDFC824EEEE6A00AED9FE /* Rainforest.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +174,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B53FDFC524EEEE0200AED9FE /* Hot summer day.wav in Resources */,
 				B50660BA24ED9ACB008D196F /* LaunchScreen.storyboard in Resources */,
+				B50660C324EDA1E5008D196F /* Cave.wav in Resources */,
+				B53FDFBD24EEED6D00AED9FE /* Birds.wav in Resources */,
+				B53FDFCB24EEEE8D00AED9FE /* Rain.wav in Resources */,
+				B53FDFBB24EEECFF00AED9FE /* Mountain.wav in Resources */,
+				B53FDFC324EEEDF200AED9FE /* Cold winter day.wav in Resources */,
+				B53FDFC924EEEE6A00AED9FE /* Rainforest.wav in Resources */,
+				B53FDFC724EEEE1B00AED9FE /* Desert.wav in Resources */,
 				B50660B724ED9ACB008D196F /* Preview Assets.xcassets in Resources */,
 				B50660B424ED9ACB008D196F /* Assets.xcassets in Resources */,
 			);
@@ -146,9 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B53FDFCF24EEEF4400AED9FE /* Sound.swift in Sources */,
+				B53FDFD124EEEFC100AED9FE /* AudioStore.swift in Sources */,
 				B50660AE24ED9AC8008D196F /* AppDelegate.swift in Sources */,
 				B50660B024ED9AC8008D196F /* SceneDelegate.swift in Sources */,
 				B50660B224ED9AC8008D196F /* ContentView.swift in Sources */,
+				B50660C524EDA638008D196F /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
