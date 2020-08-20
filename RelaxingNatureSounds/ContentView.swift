@@ -15,8 +15,11 @@ struct ContentView: View {
         List {
             Section(header: Text("Sounds of nature")) {
                 ForEach(audioStore.allSounds, id: \.self) { sound in
-                    Button("\(sound.name)") {
+                    Button(action: {
                         AudioPlayer.shared.playSound(sound.audio)
+                    }) {
+                        //Image("Cave").frame(width: 32.0, height: 32.0)
+                        Text("\(sound.name)")
                     }
                 }
             }
