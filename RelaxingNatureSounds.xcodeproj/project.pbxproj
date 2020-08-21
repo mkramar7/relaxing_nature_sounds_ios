@@ -24,6 +24,7 @@
 		B53FDFCB24EEEE8D00AED9FE /* Rain.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFCA24EEEE8D00AED9FE /* Rain.wav */; };
 		B53FDFCF24EEEF4400AED9FE /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FDFCE24EEEF4400AED9FE /* Sound.swift */; };
 		B53FDFD124EEEFC100AED9FE /* AudioStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FDFD024EEEFC100AED9FE /* AudioStore.swift */; };
+		B540FB7824F01DDA002AD116 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540FB7724F01DDA002AD116 /* Triangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		B53FDFCA24EEEE8D00AED9FE /* Rain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Rain.wav; sourceTree = "<group>"; };
 		B53FDFCE24EEEF4400AED9FE /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		B53FDFD024EEEFC100AED9FE /* AudioStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioStore.swift; sourceTree = "<group>"; };
+		B540FB7724F01DDA002AD116 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		B50660AC24ED9AC8008D196F /* RelaxingNatureSounds */ = {
 			isa = PBXGroup;
 			children = (
+				B540FB7624F01DCA002AD116 /* Shapes */,
 				B50660C424EDA638008D196F /* AudioPlayer.swift */,
 				B53FDFD024EEEFC100AED9FE /* AudioStore.swift */,
 				B53FDFCE24EEEF4400AED9FE /* Sound.swift */,
@@ -114,6 +117,14 @@
 				B53FDFC824EEEE6A00AED9FE /* Rainforest.wav */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		B540FB7624F01DCA002AD116 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				B540FB7724F01DDA002AD116 /* Triangle.swift */,
+			);
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 				B50660AE24ED9AC8008D196F /* AppDelegate.swift in Sources */,
 				B50660B024ED9AC8008D196F /* SceneDelegate.swift in Sources */,
 				B50660B224ED9AC8008D196F /* ContentView.swift in Sources */,
+				B540FB7824F01DDA002AD116 /* Triangle.swift in Sources */,
 				B50660C524EDA638008D196F /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
