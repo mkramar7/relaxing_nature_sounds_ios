@@ -14,51 +14,67 @@ struct ContentView: View {
     @State private var currentlyPlaying: String = ""
     
     var body: some View {
-        List {
-            ForEach(audioStore.allSounds, id: \.self) { sound in
-                Button(action: {
-                    if (self.currentlyPlaying == sound.id) {
-                        self.currentlyPlaying = ""
-                        AudioPlayer.shared.stopPlayingSound()
-                    } else {
-                        self.currentlyPlaying = sound.id
-                        AudioPlayer.shared.playSound(sound.audio)
+        NavigationView {
+            List {
+                ForEach(audioStore.allSounds, id: \.self) { sound in
+                    Button(action: {
+                        if (self.currentlyPlaying == sound.id) {
+                            self.currentlyPlaying = ""
+                            AudioPlayer.shared.stopPlayingSound()
+                        } else {
+                            self.currentlyPlaying = sound.id
+                            AudioPlayer.shared.playSound(sound.audio)
+                        }
+                    }) {
+                        ZStack(alignment: .leading) {
+                            Image(sound.image)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .opacity(self.isCurrentlyPlaying(sound) ? 1 : 0.8)
+                                .cornerRadius(8)
+                                .animation(.spring())
+                            
+                            Triangle()
+                                .fill(Color.white)
+                                .frame(width: 70, height: 35)
+                                .rotationEffect(.degrees(90.0))
+                                .opacity(self.isCurrentlyPlaying(sound) ? 0.5 : 0)
+                                .padding(.leading, -17)
+                                .offset(x: 0, y: 5)
+                                .animation(.spring())
+                            
+                            Text("\(sound.name)")
+                                .font(Font.custom("Noteworthy", size: 50))
+                                .foregroundColor(.white)
+                                .opacity(0.8)
+                                .padding(.leading, self.isCurrentlyPlaying(sound) ? 40 : 10)
+                                .animation(.spring())
+                        }
+                        .padding(3)
+                        .listRowInsets(EdgeInsets())
                     }
-                }) {
-                    ZStack(alignment: .leading) {
-                        Image(sound.image)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .opacity(self.isCurrentlyPlaying(sound) ? 1 : 0.8)
-                            .cornerRadius(8)
-                            .animation(.spring())
-                        
-                        Triangle()
-                            .fill(Color.white)
-                            .frame(width: 70, height: 35)
-                            .rotationEffect(.degrees(90.0))
-                            .opacity(self.isCurrentlyPlaying(sound) ? 0.7 : 0)
-                            .padding(.leading, -17)
-                            .offset(x: 0, y: 5)
-                            .animation(.spring())
-                        
-                        Text("\(sound.name)")
-                            .font(Font.custom("Noteworthy", size: 50))
-                            .foregroundColor(.white)
-                            .opacity(0.8)
-                            .padding(.leading, self.isCurrentlyPlaying(sound) ? 40 : 10)
-                            .animation(.spring())
-                    }
-                    .padding(3)
-                    .background(Color.black)
-                    .listRowInsets(EdgeInsets())
+                    .buttonStyle(PlainButtonStyle())
                 }
-                .buttonStyle(PlainButtonStyle())
             }
-        }.onAppear {
-            UITableView.appearance().backgroundColor = UIColor.black
-            UITableView.appearance().separatorStyle = .none
+            .navigationBarItems(leading: Button(action: {
+                    // TODO: Do something later...
+            }) {
+                Image(systemName: "person")
+                    .resizable()
+                    .scaleEffect(1.4)
+            }, trailing: Button(action: {
+                // TODO: Do something later...
+            }) {
+               Image(systemName: "clock")
+                    .resizable()
+                    .scaleEffect(1.4)
+            })
+            .navigationBarTitle("Sounds of Nature")
+            .onAppear {
+                UITableView.appearance().separatorStyle = .none
+            }
         }
+
     }
     
     func isCurrentlyPlaying(_ sound: Sound) -> Bool {
