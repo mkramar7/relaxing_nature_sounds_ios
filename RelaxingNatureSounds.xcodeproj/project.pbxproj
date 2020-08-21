@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B50660AA24ED9AC8008D196F /* RelaxingNatureSounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RelaxingNatureSounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B50660AA24ED9AC8008D196F /* Nature Sounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nature Sounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B50660AD24ED9AC8008D196F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B50660AF24ED9AC8008D196F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B50660B124ED9AC8008D196F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		B50660AB24ED9AC8008D196F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B50660AA24ED9AC8008D196F /* RelaxingNatureSounds.app */,
+				B50660AA24ED9AC8008D196F /* Nature Sounds.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,7 +144,7 @@
 			);
 			name = RelaxingNatureSounds;
 			productName = RelaxingNatureSounds;
-			productReference = B50660AA24ED9AC8008D196F /* RelaxingNatureSounds.app */;
+			productReference = B50660AA24ED9AC8008D196F /* Nature Sounds.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -358,7 +358,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.markokramar.RelaxingNatureSounds;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Nature Sounds";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -378,7 +378,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.markokramar.RelaxingNatureSounds;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Nature Sounds";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
