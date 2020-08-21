@@ -38,7 +38,7 @@ struct ContentView: View {
                                 .fill(Color.white)
                                 .frame(width: 70, height: 35)
                                 .rotationEffect(.degrees(90.0))
-                                .opacity(self.isCurrentlyPlaying(sound) ? 0.5 : 0)
+                                .opacity(self.isCurrentlyPlaying(sound) ? 0.8 : 0)
                                 .padding(.leading, -17)
                                 .offset(x: 0, y: 5)
                                 .animation(.spring())
@@ -46,7 +46,7 @@ struct ContentView: View {
                             Text("\(sound.name)")
                                 .font(Font.custom("Noteworthy", size: 50))
                                 .foregroundColor(.white)
-                                .opacity(0.8)
+                                .opacity(self.isCurrentlyPlaying(sound) ? 1 : 0.8)
                                 .padding(.leading, self.isCurrentlyPlaying(sound) ? 40 : 10)
                                 .animation(.spring())
                         }
