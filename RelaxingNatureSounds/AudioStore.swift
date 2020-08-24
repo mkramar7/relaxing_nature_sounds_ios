@@ -9,7 +9,8 @@
 import Foundation
 
 struct AudioStore {
-    let allSounds = [
+    static var currentlyPlayingSound: Sound?
+    static let allSounds = [
         Sound(name: "Birds", audio: Bundle.main.url(forResource: "Birds", withExtension: "wav")!, image: "Birds"),
         Sound(name: "Cave", audio: Bundle.main.url(forResource: "Cave", withExtension: "wav")!, image: "Cave"),
         Sound(name: "Cold winter day", audio: Bundle.main.url(forResource: "Cold winter day", withExtension: "wav")!, image: "Cold winter day"),
@@ -19,4 +20,8 @@ struct AudioStore {
         Sound(name: "Rain", audio: Bundle.main.url(forResource: "Rain", withExtension: "wav")!, image: "Rain"),
         Sound(name: "Rainforest", audio: Bundle.main.url(forResource: "Rainforest", withExtension: "wav")!, image: "Rainforest")
     ]
+    
+    static func findSound(id: String) -> Sound {
+        allSounds.filter { $0.id == id }.first!
+    }
 }

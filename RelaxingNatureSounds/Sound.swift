@@ -8,9 +8,23 @@
 
 import Foundation
 
-struct Sound: Hashable {
+class Sound: Hashable {
     var id: String = UUID().uuidString
     var name: String
     var audio: URL
     var image: String
+    
+    init(name: String, audio: URL, image: String) {
+        self.name = name
+        self.audio = audio
+        self.image = image
+    }
+    
+    static func == (lhs: Sound, rhs: Sound) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }

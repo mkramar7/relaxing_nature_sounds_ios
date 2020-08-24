@@ -9,21 +9,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    let audioStore: AudioStore
-    
     @State private var currentlyPlaying: String = ""
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(audioStore.allSounds, id: \.self) { sound in
+                ForEach(AudioStore.allSounds, id: \.self) { sound in
                     Button(action: {
                         if (self.currentlyPlaying == sound.id) {
                             self.currentlyPlaying = ""
                             AudioPlayer.shared.stopPlayingSound()
                         } else {
                             self.currentlyPlaying = sound.id
-                            AudioPlayer.shared.playSound(sound.audio)
+                            AudioPlayer.shared.playSound(sound)
                         }
                     }) {
                         ZStack(alignment: .leading) {
@@ -84,6 +82,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(audioStore: AudioStore())
+        ContentView()
     }
 }
