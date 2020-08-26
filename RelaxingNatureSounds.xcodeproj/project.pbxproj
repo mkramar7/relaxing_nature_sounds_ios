@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,12 @@
 		B50660BA24ED9ACB008D196F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50660B824ED9ACB008D196F /* LaunchScreen.storyboard */; };
 		B50660C324EDA1E5008D196F /* Cave.wav in Resources */ = {isa = PBXBuildFile; fileRef = B50660C224EDA1E5008D196F /* Cave.wav */; };
 		B50660C524EDA638008D196F /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50660C424EDA638008D196F /* AudioPlayer.swift */; };
+		B5223B3D24F6E33700B23591 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5223B3724F6E33300B23591 /* nanopb.xcframework */; };
+		B5223B3E24F6E33700B23591 /* UserMessagingPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5223B3824F6E33300B23591 /* UserMessagingPlatform.framework */; };
+		B5223B3F24F6E33700B23591 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5223B3924F6E33400B23591 /* GoogleAppMeasurement.framework */; };
+		B5223B4024F6E33700B23591 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5223B3A24F6E33400B23591 /* GoogleUtilities.xcframework */; };
+		B5223B4124F6E33700B23591 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5223B3B24F6E33700B23591 /* GoogleMobileAds.framework */; };
+		B5223B4224F6E33700B23591 /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5223B3C24F6E33700B23591 /* PromisesObjC.xcframework */; };
 		B53FDFBB24EEECFF00AED9FE /* Mountains.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFBA24EEECFF00AED9FE /* Mountains.wav */; };
 		B53FDFBD24EEED6D00AED9FE /* Birds.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFBC24EEED6D00AED9FE /* Birds.wav */; };
 		B53FDFC324EEEDF200AED9FE /* Cold winter day.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFC224EEEDF200AED9FE /* Cold winter day.wav */; };
@@ -27,6 +33,19 @@
 		B540FB7824F01DDA002AD116 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540FB7724F01DDA002AD116 /* Triangle.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B5223B3624F6E0A800B23591 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B50660AA24ED9AC8008D196F /* Nature Sounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nature Sounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B50660AD24ED9AC8008D196F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +57,12 @@
 		B50660BB24ED9ACB008D196F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B50660C224EDA1E5008D196F /* Cave.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cave.wav; sourceTree = "<group>"; };
 		B50660C424EDA638008D196F /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		B5223B3724F6E33300B23591 /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = nanopb.xcframework; sourceTree = "<group>"; };
+		B5223B3824F6E33300B23591 /* UserMessagingPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UserMessagingPlatform.framework; sourceTree = "<group>"; };
+		B5223B3924F6E33400B23591 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		B5223B3A24F6E33400B23591 /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleUtilities.xcframework; sourceTree = "<group>"; };
+		B5223B3B24F6E33700B23591 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		B5223B3C24F6E33700B23591 /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PromisesObjC.xcframework; sourceTree = "<group>"; };
 		B53FDFBA24EEECFF00AED9FE /* Mountains.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Mountains.wav; sourceTree = "<group>"; };
 		B53FDFBC24EEED6D00AED9FE /* Birds.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Birds.wav; sourceTree = "<group>"; };
 		B53FDFC224EEEDF200AED9FE /* Cold winter day.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Cold winter day.wav"; sourceTree = "<group>"; };
@@ -55,6 +80,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5223B3D24F6E33700B23591 /* nanopb.xcframework in Frameworks */,
+				B5223B3E24F6E33700B23591 /* UserMessagingPlatform.framework in Frameworks */,
+				B5223B4124F6E33700B23591 /* GoogleMobileAds.framework in Frameworks */,
+				B5223B4224F6E33700B23591 /* PromisesObjC.xcframework in Frameworks */,
+				B5223B3F24F6E33700B23591 /* GoogleAppMeasurement.framework in Frameworks */,
+				B5223B4024F6E33700B23591 /* GoogleUtilities.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +97,7 @@
 			children = (
 				B50660AC24ED9AC8008D196F /* RelaxingNatureSounds */,
 				B50660AB24ED9AC8008D196F /* Products */,
+				B5223B2324F6E0A800B23591 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +151,19 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		B5223B2324F6E0A800B23591 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5223B3924F6E33400B23591 /* GoogleAppMeasurement.framework */,
+				B5223B3B24F6E33700B23591 /* GoogleMobileAds.framework */,
+				B5223B3A24F6E33400B23591 /* GoogleUtilities.xcframework */,
+				B5223B3724F6E33300B23591 /* nanopb.xcframework */,
+				B5223B3C24F6E33700B23591 /* PromisesObjC.xcframework */,
+				B5223B3824F6E33300B23591 /* UserMessagingPlatform.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B540FB7624F01DCA002AD116 /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +182,7 @@
 				B50660A624ED9AC8008D196F /* Sources */,
 				B50660A724ED9AC8008D196F /* Frameworks */,
 				B50660A824ED9AC8008D196F /* Resources */,
+				B5223B3624F6E0A800B23591 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -352,11 +398,16 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RelaxingNatureSounds/Preview Content\"";
 				DEVELOPMENT_TEAM = D6Z6GBS4J9;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RelaxingNatureSounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.markokramar.RelaxingNatureSounds;
 				PRODUCT_NAME = "Nature Sounds";
 				SWIFT_VERSION = 5.0;
@@ -372,11 +423,16 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RelaxingNatureSounds/Preview Content\"";
 				DEVELOPMENT_TEAM = D6Z6GBS4J9;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RelaxingNatureSounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.markokramar.RelaxingNatureSounds;
 				PRODUCT_NAME = "Nature Sounds";
 				SWIFT_VERSION = 5.0;
