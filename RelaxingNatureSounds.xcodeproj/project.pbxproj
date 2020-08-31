@@ -31,6 +31,7 @@
 		B53FDFCF24EEEF4400AED9FE /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FDFCE24EEEF4400AED9FE /* Sound.swift */; };
 		B53FDFD124EEEFC100AED9FE /* AudioStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FDFD024EEEFC100AED9FE /* AudioStore.swift */; };
 		B540FB7824F01DDA002AD116 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540FB7724F01DDA002AD116 /* Triangle.swift */; };
+		B5DA5C7524FD2B4D0061B97D /* GoogleAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA5C7424FD2B4D0061B97D /* GoogleAd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,6 +74,7 @@
 		B53FDFCE24EEEF4400AED9FE /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		B53FDFD024EEEFC100AED9FE /* AudioStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioStore.swift; sourceTree = "<group>"; };
 		B540FB7724F01DDA002AD116 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		B5DA5C7424FD2B4D0061B97D /* GoogleAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAd.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,14 +114,15 @@
 		B50660AC24ED9AC8008D196F /* RelaxingNatureSounds */ = {
 			isa = PBXGroup;
 			children = (
+				B50660C124ED9B57008D196F /* Sounds */,
 				B540FB7624F01DCA002AD116 /* Shapes */,
+				B53FDFCE24EEEF4400AED9FE /* Sound.swift */,
 				B50660C424EDA638008D196F /* AudioPlayer.swift */,
 				B53FDFD024EEEFC100AED9FE /* AudioStore.swift */,
-				B53FDFCE24EEEF4400AED9FE /* Sound.swift */,
-				B50660C124ED9B57008D196F /* Sounds */,
 				B50660AD24ED9AC8008D196F /* AppDelegate.swift */,
 				B50660AF24ED9AC8008D196F /* SceneDelegate.swift */,
 				B50660B124ED9AC8008D196F /* ContentView.swift */,
+				B5DA5C7424FD2B4D0061B97D /* GoogleAd.swift */,
 				B50660B324ED9ACB008D196F /* Assets.xcassets */,
 				B50660B824ED9ACB008D196F /* LaunchScreen.storyboard */,
 				B50660BB24ED9ACB008D196F /* Info.plist */,
@@ -255,6 +258,7 @@
 				B53FDFCF24EEEF4400AED9FE /* Sound.swift in Sources */,
 				B53FDFD124EEEFC100AED9FE /* AudioStore.swift in Sources */,
 				B50660AE24ED9AC8008D196F /* AppDelegate.swift in Sources */,
+				B5DA5C7524FD2B4D0061B97D /* GoogleAd.swift in Sources */,
 				B50660B024ED9AC8008D196F /* SceneDelegate.swift in Sources */,
 				B50660B224ED9AC8008D196F /* ContentView.swift in Sources */,
 				B540FB7824F01DDA002AD116 /* Triangle.swift in Sources */,

@@ -7,19 +7,18 @@
 //
 
 import SwiftUI
-import GoogleMobileAds
 
 struct ContentView: View {
-    @State private var currentlyPlaying: String = ""
+    @State private var currentlyPlaying: UUID?
     
     var body: some View {
         NavigationView {
             ZStack(alignment: .bottom) {
                 List {
-                    ForEach(AudioStore.allSounds, id: \.self) { sound in
+                    ForEach(AudioStore.allSounds) { sound in
                         Button(action: {
                             if (self.currentlyPlaying == sound.id) {
-                                self.currentlyPlaying = ""
+                                self.currentlyPlaying = nil
                                 AudioPlayer.shared.stopPlayingSound()
                             } else {
                                 self.currentlyPlaying = sound.id
@@ -57,8 +56,13 @@ struct ContentView: View {
                     }
                 }
                 
-                GoogleAdBanner().frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50)
+                if UIApplication.shared.windows.first!.safeAreaInsets.bottom > 0 {
+                    googleBannerWithBackground()
+                } else {
+                    googleBanner()
+                }
             }
+            .edgesIgnoringSafeArea(.bottom)
             .navigationBarItems(leading: Button(action: {
                     // TODO: Do something later...
             }) {
@@ -80,6 +84,21 @@ struct ContentView: View {
 
     }
     
+    func googleBanner() -> some View {
+        GoogleAdBanner()
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50)
+    }
+    
+    func googleBannerWithBackground() -> some View {
+        VStack {
+            googleBanner()
+            Spacer()
+        }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: (50 + UIApplication.shared.windows.first!.safeAreaInsets.bottom))
+        .padding(0)
+        .background(Color.red)
+    }
+    
     func isCurrentlyPlaying(_ sound: Sound) -> Bool {
         self.currentlyPlaying == sound.id
     }
@@ -89,22 +108,4 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
-}
-
-struct GoogleAdBanner: UIViewRepresentable {
-    
-    func makeUIView(context: UIViewRepresentableContext<GoogleAdBanner>) -> GADBannerView {
-        let banner = GADBannerView(adSize: kGADAdSizeBanner)
-        // banner.adUnitID = "ca-app-pub-2155607165715644/1922843841" // Real banner ID
-        banner.adUnitID = "ca-app-pub-3940256099942544/2934735716" // Sample banner ID
-        banner.rootViewController = UIApplication.shared.windows.first?.rootViewController
-        banner.load(GADRequest())
-        return banner
-    }
-    
-    func updateUIView(_ uiView: GADBannerView, context: UIViewRepresentableContext<GoogleAdBanner>) {
-        
-    }
-    
-    
 }

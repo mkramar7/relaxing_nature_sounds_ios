@@ -21,7 +21,7 @@ struct AudioStore {
         Sound(name: "Rainforest", audio: Bundle.main.url(forResource: "Rainforest", withExtension: "wav")!, image: "Rainforest")
     ]
     
-    static func findSound(id: String) -> Sound {
+    static func findSound(id: UUID) -> Sound {
         allSounds.filter { $0.id == id }.first!
     }
 }

@@ -8,8 +8,8 @@
 
 import Foundation
 
-class Sound: Hashable {
-    var id: String = UUID().uuidString
+class Sound: Hashable, Identifiable {
+    var id = UUID()
     var name: String
     var audio: URL
     var image: String
