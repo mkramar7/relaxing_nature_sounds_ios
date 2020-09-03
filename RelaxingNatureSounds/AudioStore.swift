@@ -9,7 +9,6 @@
 import Foundation
 
 struct AudioStore {
-    static var currentlyPlayingSound: Sound?
     static let allSounds = [
         Sound(name: "Birds", audio: Bundle.main.url(forResource: "Birds", withExtension: "wav")!, image: "Birds"),
         Sound(name: "Cave", audio: Bundle.main.url(forResource: "Cave", withExtension: "wav")!, image: "Cave"),
