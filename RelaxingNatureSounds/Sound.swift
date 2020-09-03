@@ -8,11 +8,19 @@
 
 import Foundation
 
-class Sound: Hashable, Identifiable {
+class Sound: Hashable, Identifiable, ObservableObject {
     var id = UUID()
     var name: String
     var audio: URL
     var image: String
+    @Published var currentlyPlaying = false {
+        willSet {
+            // If sound is set to be currently playing, all other sounds should be marked as not currently playing
+            if newValue {
+                AudioStore.allSounds.forEach { $0.currentlyPlaying = false }
+            }
+        }
+    }
     
     init(name: String, audio: URL, image: String) {
         self.name = name

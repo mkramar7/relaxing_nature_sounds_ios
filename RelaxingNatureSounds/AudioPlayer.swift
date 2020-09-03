@@ -12,8 +12,6 @@ import MediaPlayer
 
 class AudioPlayer {
     static let shared = AudioPlayer()
-    static var currentlyPlayingSound: Sound?
-    
     var audioPlayer: AVAudioPlayer!
     
     init() {
@@ -26,13 +24,13 @@ class AudioPlayer {
         audioPlayer.prepareToPlay()
         audioPlayer.play()
         updateNowPlayingInfo(with: sound.name)
-        AudioPlayer.currentlyPlayingSound = sound
+        sound.currentlyPlaying = true
     }
     
-    func stopPlayingSound() {
+    func stopPlayingSound(_ sound: Sound) {
         guard let audioPlayer = audioPlayer else { return }
         audioPlayer.stop()
-        AudioPlayer.currentlyPlayingSound = nil
+        sound.currentlyPlaying = false
     }
     
     func playPreviousSound() {
@@ -44,7 +42,8 @@ class AudioPlayer {
     }
     
     private func fetchNextOrPreviousSound(shouldFetchPrevious: Bool) -> Sound {
-        guard let currentlyPlayingSound = AudioPlayer.currentlyPlayingSound else {
+        // If no sound is currently playing, fetch first one
+        guard let currentlyPlayingSound = AudioStore.currentlyPlayingSound() else {
            return AudioStore.allSounds[0]
         }
 
@@ -93,13 +92,5 @@ class AudioPlayer {
             self?.playPreviousSound()
             return .success
         }
-    }
-    
-    static func isCurrentlyPlaying(_ sound: Sound) -> Bool {
-        if let currentSound = AudioPlayer.currentlyPlayingSound {
-            return currentSound.name == sound.name
-        }
-        
-        return false
     }
 }

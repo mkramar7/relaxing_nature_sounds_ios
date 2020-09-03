@@ -23,4 +23,8 @@ struct AudioStore {
     static func findSound(id: UUID) -> Sound {
         allSounds.filter { $0.id == id }.first!
     }
+    
+    static func currentlyPlayingSound() -> Sound? {
+        AudioStore.allSounds.filter({ $0.currentlyPlaying }).first
+    }
 }

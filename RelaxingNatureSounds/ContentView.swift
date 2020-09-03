@@ -47,8 +47,8 @@ struct ContentView: View {
     }
     
     func playOrStopPlaying(_ sound: Sound) {
-        if (AudioPlayer.isCurrentlyPlaying(sound)) {
-            AudioPlayer.shared.stopPlayingSound()
+        if (sound.currentlyPlaying) {
+            AudioPlayer.shared.stopPlayingSound(sound)
             return;
         }
         
@@ -57,14 +57,14 @@ struct ContentView: View {
 }
 
 struct SoundImage: View {
-    @State var sound: Sound
+    @ObservedObject var sound: Sound
     
     var body: some View {
         ZStack(alignment: .leading) {
             Image(sound.image)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .opacity(AudioPlayer.isCurrentlyPlaying(sound) ? 1 : 0.8)
+                .opacity(sound.currentlyPlaying ? 1 : 0.8)
                 .cornerRadius(8)
                 .animation(.spring())
             
@@ -72,7 +72,7 @@ struct SoundImage: View {
                 .fill(Color.white)
                 .frame(width: 70, height: 35)
                 .rotationEffect(.degrees(90.0))
-                .opacity(AudioPlayer.isCurrentlyPlaying(sound) ? 0.8 : 0)
+                .opacity(sound.currentlyPlaying ? 0.8 : 0)
                 .padding(.leading, -17)
                 .offset(x: 0, y: 5)
                 .animation(.spring())
@@ -80,8 +80,8 @@ struct SoundImage: View {
             Text("\(sound.name)")
                 .font(Font.custom("Noteworthy", size: 50))
                 .foregroundColor(.white)
-                .opacity(AudioPlayer.isCurrentlyPlaying(sound) ? 1 : 0.8)
-                .padding(.leading, AudioPlayer.isCurrentlyPlaying(sound) ? 40 : 10)
+                .opacity(sound.currentlyPlaying ? 1 : 0.8)
+                .padding(.leading, sound.currentlyPlaying ? 40 : 10)
                 .animation(.spring())
         }
         .padding(3)
