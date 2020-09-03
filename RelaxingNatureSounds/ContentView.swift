@@ -8,6 +8,12 @@
 
 import SwiftUI
 
+struct VisualEffectView: UIViewRepresentable {
+    var effect: UIVisualEffect?
+    func makeUIView(context: UIViewRepresentableContext<Self>) -> UIVisualEffectView { UIVisualEffectView() }
+    func updateUIView(_ uiView: UIVisualEffectView, context: UIViewRepresentableContext<Self>) { uiView.effect = effect }
+}
+
 struct ContentView: View {
     @State private var currentlyPlaying: UUID?
     
@@ -92,11 +98,11 @@ struct ContentView: View {
     func googleBannerWithBackground() -> some View {
         VStack {
             googleBanner()
+            VisualEffectView(effect: UIBlurEffect(style: .dark)).padding(0).edgesIgnoringSafeArea(.all)
             Spacer()
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: (50 + UIApplication.shared.windows.first!.safeAreaInsets.bottom))
         .padding(0)
-        .background(Color.red)
     }
     
     func isCurrentlyPlaying(_ sound: Sound) -> Bool {
