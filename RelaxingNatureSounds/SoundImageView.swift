@@ -36,13 +36,7 @@ struct SoundImageView: View {
                 .padding(.leading, sound.currentlyPlaying ? 40 : 10)
                 .animation(.spring())
         }
-        .padding(3)
-        .listRowInsets(EdgeInsets())
-    }
-}
-
-struct SoundImageView_Previews: PreviewProvider {
-    static var previews: some View {
-        SoundImageView(sound: AudioStore.allSounds.first!)
+        .padding(.leading, 3)
+        .padding(.trailing, 3)
     }
 }

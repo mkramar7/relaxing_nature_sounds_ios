@@ -13,15 +13,13 @@ struct ContentView: View {
         NavigationView {
             ZStack(alignment: .bottom) {
                 ScrollView {
-                    VStack {
-                        ForEach(AudioStore.allSounds) { sound in
-                            Button(action: {
-                                self.playOrStopPlaying(sound)
-                            }) {
-                                SoundImageView(sound: sound)
-                            }
-                            .buttonStyle(PlainButtonStyle())
+                    ForEach(AudioStore.allSounds) { sound in
+                        Button(action: {
+                            self.playOrStopPlaying(sound)
+                        }) {
+                            SoundImageView(sound: sound)
                         }
+                        .buttonStyle(PlainButtonStyle())
                     }
                 }
                 .padding(.bottom, 75)
