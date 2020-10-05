@@ -22,7 +22,7 @@ struct ContentView: View {
                         .buttonStyle(PlainButtonStyle())
                     }
                 }
-                .padding(.bottom, 75)
+                .padding(.bottom, 92)
                 
                 GoogleAdBannerView()
             }
