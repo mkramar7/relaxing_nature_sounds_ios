@@ -9,8 +9,13 @@
 import SwiftUI
 import GoogleMobileAds
 
+private struct VisualEffectView: UIViewRepresentable {
+    var effect: UIVisualEffect?
+    func makeUIView(context: UIViewRepresentableContext<Self>) -> UIVisualEffectView { UIVisualEffectView() }
+    func updateUIView(_ uiView: UIVisualEffectView, context: UIViewRepresentableContext<Self>) { uiView.effect = effect }
+}
+
 private struct GoogleAdBannerRepresentable: UIViewRepresentable {
-    
     func makeUIView(context: UIViewRepresentableContext<GoogleAdBannerRepresentable>) -> GADBannerView {
         let banner = GADBannerView(adSize: kGADAdSizeBanner)
         // banner.adUnitID = "ca-app-pub-2155607165715644/1922843841" // Real banner ID
@@ -26,7 +31,7 @@ private struct GoogleAdBannerRepresentable: UIViewRepresentable {
     
 }
 
-struct GoogleAdBanner: View {
+struct GoogleAdBannerView: View {
     var body: some View {
         Group {
             if UIApplication.shared.windows.first!.safeAreaInsets.bottom > 0 {

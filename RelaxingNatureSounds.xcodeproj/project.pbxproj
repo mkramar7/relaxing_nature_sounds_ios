@@ -8,12 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AD2EC358252B26310027E156 /* SoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2EC357252B26310027E156 /* SoundImageView.swift */; };
-		B50660AE24ED9AC8008D196F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50660AD24ED9AC8008D196F /* AppDelegate.swift */; };
-		B50660B024ED9AC8008D196F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50660AF24ED9AC8008D196F /* SceneDelegate.swift */; };
+		AD2EC35A252B274A0027E156 /* RelaxingNatureSoundsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2EC359252B274A0027E156 /* RelaxingNatureSoundsApp.swift */; };
 		B50660B224ED9AC8008D196F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50660B124ED9AC8008D196F /* ContentView.swift */; };
 		B50660B424ED9ACB008D196F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B50660B324ED9ACB008D196F /* Assets.xcassets */; };
 		B50660B724ED9ACB008D196F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B50660B624ED9ACB008D196F /* Preview Assets.xcassets */; };
-		B50660BA24ED9ACB008D196F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50660B824ED9ACB008D196F /* LaunchScreen.storyboard */; };
 		B50660C324EDA1E5008D196F /* Cave.wav in Resources */ = {isa = PBXBuildFile; fileRef = B50660C224EDA1E5008D196F /* Cave.wav */; };
 		B50660C524EDA638008D196F /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50660C424EDA638008D196F /* AudioPlayer.swift */; };
 		B5223B3D24F6E33700B23591 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5223B3724F6E33300B23591 /* nanopb.xcframework */; };
@@ -29,11 +27,9 @@
 		B53FDFC724EEEE1B00AED9FE /* Desert.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFC624EEEE1B00AED9FE /* Desert.wav */; };
 		B53FDFC924EEEE6A00AED9FE /* Rainforest.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFC824EEEE6A00AED9FE /* Rainforest.wav */; };
 		B53FDFCB24EEEE8D00AED9FE /* Rain.wav in Resources */ = {isa = PBXBuildFile; fileRef = B53FDFCA24EEEE8D00AED9FE /* Rain.wav */; };
-		B53FDFCF24EEEF4400AED9FE /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FDFCE24EEEF4400AED9FE /* Sound.swift */; };
 		B53FDFD124EEEFC100AED9FE /* AudioStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FDFD024EEEFC100AED9FE /* AudioStore.swift */; };
 		B540FB7824F01DDA002AD116 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540FB7724F01DDA002AD116 /* Triangle.swift */; };
-		B570ECD92501631E002E2384 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570ECD82501631E002E2384 /* Util.swift */; };
-		B5DA5C7524FD2B4D0061B97D /* GoogleAdBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA5C7424FD2B4D0061B97D /* GoogleAdBanner.swift */; };
+		B5DA5C7524FD2B4D0061B97D /* GoogleAdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA5C7424FD2B4D0061B97D /* GoogleAdBannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,13 +47,11 @@
 
 /* Begin PBXFileReference section */
 		AD2EC357252B26310027E156 /* SoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundImageView.swift; sourceTree = "<group>"; };
+		AD2EC359252B274A0027E156 /* RelaxingNatureSoundsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxingNatureSoundsApp.swift; sourceTree = "<group>"; };
 		B50660AA24ED9AC8008D196F /* Nature Sounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nature Sounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B50660AD24ED9AC8008D196F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B50660AF24ED9AC8008D196F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B50660B124ED9AC8008D196F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B50660B324ED9ACB008D196F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B50660B624ED9ACB008D196F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B50660B924ED9ACB008D196F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B50660BB24ED9ACB008D196F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B50660C224EDA1E5008D196F /* Cave.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cave.wav; sourceTree = "<group>"; };
 		B50660C424EDA638008D196F /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
@@ -74,11 +68,9 @@
 		B53FDFC624EEEE1B00AED9FE /* Desert.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Desert.wav; sourceTree = "<group>"; };
 		B53FDFC824EEEE6A00AED9FE /* Rainforest.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Rainforest.wav; sourceTree = "<group>"; };
 		B53FDFCA24EEEE8D00AED9FE /* Rain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Rain.wav; sourceTree = "<group>"; };
-		B53FDFCE24EEEF4400AED9FE /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		B53FDFD024EEEFC100AED9FE /* AudioStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioStore.swift; sourceTree = "<group>"; };
 		B540FB7724F01DDA002AD116 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
-		B570ECD82501631E002E2384 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
-		B5DA5C7424FD2B4D0061B97D /* GoogleAdBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdBanner.swift; sourceTree = "<group>"; };
+		B5DA5C7424FD2B4D0061B97D /* GoogleAdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdBannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,19 +112,15 @@
 			children = (
 				B50660C124ED9B57008D196F /* Sounds */,
 				B540FB7624F01DCA002AD116 /* Shapes */,
-				B53FDFCE24EEEF4400AED9FE /* Sound.swift */,
+				AD2EC359252B274A0027E156 /* RelaxingNatureSoundsApp.swift */,
 				B50660C424EDA638008D196F /* AudioPlayer.swift */,
 				B53FDFD024EEEFC100AED9FE /* AudioStore.swift */,
-				B50660AD24ED9AC8008D196F /* AppDelegate.swift */,
-				B50660AF24ED9AC8008D196F /* SceneDelegate.swift */,
 				B50660B124ED9AC8008D196F /* ContentView.swift */,
 				AD2EC357252B26310027E156 /* SoundImageView.swift */,
-				B5DA5C7424FD2B4D0061B97D /* GoogleAdBanner.swift */,
+				B5DA5C7424FD2B4D0061B97D /* GoogleAdBannerView.swift */,
 				B50660B324ED9ACB008D196F /* Assets.xcassets */,
-				B50660B824ED9ACB008D196F /* LaunchScreen.storyboard */,
 				B50660BB24ED9ACB008D196F /* Info.plist */,
 				B50660B524ED9ACB008D196F /* Preview Content */,
-				B570ECD82501631E002E2384 /* Util.swift */,
 			);
 			path = RelaxingNatureSounds;
 			sourceTree = "<group>";
@@ -241,7 +229,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B53FDFC524EEEE0200AED9FE /* Hot summer day.wav in Resources */,
-				B50660BA24ED9ACB008D196F /* LaunchScreen.storyboard in Resources */,
 				B50660C324EDA1E5008D196F /* Cave.wav in Resources */,
 				B53FDFBD24EEED6D00AED9FE /* Birds.wav in Resources */,
 				B53FDFCB24EEEE8D00AED9FE /* Rain.wav in Resources */,
@@ -261,31 +248,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B53FDFCF24EEEF4400AED9FE /* Sound.swift in Sources */,
-				B570ECD92501631E002E2384 /* Util.swift in Sources */,
 				B53FDFD124EEEFC100AED9FE /* AudioStore.swift in Sources */,
-				B50660AE24ED9AC8008D196F /* AppDelegate.swift in Sources */,
-				B5DA5C7524FD2B4D0061B97D /* GoogleAdBanner.swift in Sources */,
-				B50660B024ED9AC8008D196F /* SceneDelegate.swift in Sources */,
+				B5DA5C7524FD2B4D0061B97D /* GoogleAdBannerView.swift in Sources */,
 				AD2EC358252B26310027E156 /* SoundImageView.swift in Sources */,
 				B50660B224ED9AC8008D196F /* ContentView.swift in Sources */,
 				B540FB7824F01DDA002AD116 /* Triangle.swift in Sources */,
+				AD2EC35A252B274A0027E156 /* RelaxingNatureSoundsApp.swift in Sources */,
 				B50660C524EDA638008D196F /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B50660B824ED9ACB008D196F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B50660B924ED9ACB008D196F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B50660BC24ED9ACB008D196F /* Debug */ = {

@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct SoundImageView: View {
-    @ObservedObject var sound: Sound
+    @ObservedObject var sound: AudioStore.Sound
     
     var body: some View {
         ZStack(alignment: .leading) {

@@ -19,7 +19,7 @@ class AudioPlayer {
         setupCommandCenter()
     }
     
-    func playSound(_ sound: Sound) {
+    func playSound(_ sound: AudioStore.Sound) {
         audioPlayer = try! AVAudioPlayer(contentsOf: sound.audio)
         audioPlayer.prepareToPlay()
         audioPlayer.play()
@@ -27,7 +27,7 @@ class AudioPlayer {
         sound.currentlyPlaying = true
     }
     
-    func stopPlayingSound(_ sound: Sound) {
+    func stopPlayingSound(_ sound: AudioStore.Sound) {
         guard let audioPlayer = audioPlayer else { return }
         audioPlayer.stop()
         sound.currentlyPlaying = false
@@ -41,7 +41,7 @@ class AudioPlayer {
         playSound(fetchNextOrPreviousSound(shouldFetchPrevious: false))
     }
     
-    private func fetchNextOrPreviousSound(shouldFetchPrevious: Bool) -> Sound {
+    private func fetchNextOrPreviousSound(shouldFetchPrevious: Bool) -> AudioStore.Sound {
         // If no sound is currently playing, fetch first one
         guard let currentlyPlayingSound = AudioStore.currentlyPlayingSound() else {
            return AudioStore.allSounds[0]

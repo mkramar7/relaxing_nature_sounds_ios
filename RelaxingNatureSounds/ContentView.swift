@@ -26,7 +26,7 @@ struct ContentView: View {
                 }
                 .padding(.bottom, 75)
                 
-                GoogleAdBanner()
+                GoogleAdBannerView()
             }
             .edgesIgnoringSafeArea(.bottom)
             .navigationBarItems(leading: Button(action: {
@@ -46,18 +46,12 @@ struct ContentView: View {
         }
     }
     
-    func playOrStopPlaying(_ sound: Sound) {
+    func playOrStopPlaying(_ sound: AudioStore.Sound) {
         if (sound.currentlyPlaying) {
             AudioPlayer.shared.stopPlayingSound(sound)
             return;
         }
         
         AudioPlayer.shared.playSound(sound)
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView().preferredColorScheme(.dark)
     }
 }
