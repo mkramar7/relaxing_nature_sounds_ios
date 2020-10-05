@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD2EC358252B26310027E156 /* SoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2EC357252B26310027E156 /* SoundImageView.swift */; };
 		B50660AE24ED9AC8008D196F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50660AD24ED9AC8008D196F /* AppDelegate.swift */; };
 		B50660B024ED9AC8008D196F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50660AF24ED9AC8008D196F /* SceneDelegate.swift */; };
 		B50660B224ED9AC8008D196F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50660B124ED9AC8008D196F /* ContentView.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD2EC357252B26310027E156 /* SoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundImageView.swift; sourceTree = "<group>"; };
 		B50660AA24ED9AC8008D196F /* Nature Sounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nature Sounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B50660AD24ED9AC8008D196F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B50660AF24ED9AC8008D196F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				B50660AD24ED9AC8008D196F /* AppDelegate.swift */,
 				B50660AF24ED9AC8008D196F /* SceneDelegate.swift */,
 				B50660B124ED9AC8008D196F /* ContentView.swift */,
+				AD2EC357252B26310027E156 /* SoundImageView.swift */,
 				B5DA5C7424FD2B4D0061B97D /* GoogleAdBanner.swift */,
 				B50660B324ED9ACB008D196F /* Assets.xcassets */,
 				B50660B824ED9ACB008D196F /* LaunchScreen.storyboard */,
@@ -206,7 +209,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Marko Kramar";
 				TargetAttributes = {
 					B50660A924ED9AC8008D196F = {
@@ -264,6 +267,7 @@
 				B50660AE24ED9AC8008D196F /* AppDelegate.swift in Sources */,
 				B5DA5C7524FD2B4D0061B97D /* GoogleAdBanner.swift in Sources */,
 				B50660B024ED9AC8008D196F /* SceneDelegate.swift in Sources */,
+				AD2EC358252B26310027E156 /* SoundImageView.swift in Sources */,
 				B50660B224ED9AC8008D196F /* ContentView.swift in Sources */,
 				B540FB7824F01DDA002AD116 /* Triangle.swift in Sources */,
 				B50660C524EDA638008D196F /* AudioPlayer.swift in Sources */,
@@ -310,6 +314,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -334,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -370,6 +375,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -388,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
