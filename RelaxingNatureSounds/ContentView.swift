@@ -42,6 +42,7 @@ struct ContentView: View {
             })
             .navigationBarTitle("Sounds of Nature")
         }
+        .environment(\.colorScheme, .dark)
     }
     
     func playOrStopPlaying(_ sound: AudioStore.Sound) {
