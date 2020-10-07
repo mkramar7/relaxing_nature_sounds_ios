@@ -11,20 +11,22 @@ import SwiftUI
 struct AlarmView: View {
     @Environment(\.presentationMode) var presentationMode
     
-    @Binding var minutesUntilStop: Int
-    private let possibleMinutes = [5, 10, 15, 20, 30, 45, 60, 120]
+    @Binding var secondsUntilStop: Int
+    @Binding var countdownStarted: Bool
+    
+    private let possibleMinutes = [5, 10, 15, 20, 30, 45, 60, 120].map { $0 * 60 }
     
     var body: some View {
         VStack {
             Section {
                 Text("Stop playing after")
                     .font(.title)
-                Picker(selection: $minutesUntilStop, label: Text("")) {
+                Picker(selection: $secondsUntilStop, label: Text("")) {
                     ForEach(possibleMinutes, id: \.self) { minutes in
-                        if minutes < 60 {
-                            Text("\(minutes) minutes")
+                        if minutes < 3600 {
+                            Text("\(minutes / 60) minutes")
                         } else {
-                            Text("\(minutes / 60) hours")
+                            Text("\(minutes / 3600) hours")
                         }
                     }
                 }
@@ -35,6 +37,7 @@ struct AlarmView: View {
             }.padding(0)
             
             Button(action: {
+                self.countdownStarted = true
                 self.presentationMode.wrappedValue.dismiss()
             }) {
                 Text("Start countdown")
@@ -52,6 +55,6 @@ struct AlarmView: View {
 
 struct AlarmView_Previews: PreviewProvider {
     static var previews: some View {
-        AlarmView(minutesUntilStop: .constant(5))
+        AlarmView(secondsUntilStop: .constant(5), countdownStarted: .constant(false))
     }
 }
