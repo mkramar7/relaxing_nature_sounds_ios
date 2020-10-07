@@ -9,10 +9,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var countdownMinutes = 0
+    
     var body: some View {
         NavigationView {
             ZStack(alignment: .bottom) {
                 ScrollView {
+                    if countdownMinutes != 0 {
+                        Text("\(self.countdownMinutes)")
+                    }
+                    
                     ForEach(AudioStore.allSounds) { sound in
                         Button(action: {
                             self.playOrStopPlaying(sound)
@@ -27,13 +33,9 @@ struct ContentView: View {
                 GoogleAdBannerView()
             }
             .edgesIgnoringSafeArea(.bottom)
-            .navigationBarItems(leading: Button(action: {
-                    
-            }) {
-                Image(systemName: "clock")
-                    .resizable()
-                    .scaleEffect(1.4)
-            }, trailing: Button(action: {
+            .navigationBarItems(leading: NavigationLink(destination: AlarmView(minutesUntilStop: $countdownMinutes),
+                                                        label: { Image(systemName: "clock").resizable().scaleEffect(1.4) }
+            ), trailing: Button(action: {
                 
             }) {
                Image(systemName: "info.circle")

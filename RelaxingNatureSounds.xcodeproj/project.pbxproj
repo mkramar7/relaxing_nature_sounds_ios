@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD1E9709252E271B00C8DD64 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E9708252E271B00C8DD64 /* AlarmView.swift */; };
 		AD2EC358252B26310027E156 /* SoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2EC357252B26310027E156 /* SoundImageView.swift */; };
 		AD2EC35A252B274A0027E156 /* RelaxingNatureSoundsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2EC359252B274A0027E156 /* RelaxingNatureSoundsApp.swift */; };
 		B50660B224ED9AC8008D196F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50660B124ED9AC8008D196F /* ContentView.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD1E9708252E271B00C8DD64 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
 		AD2EC357252B26310027E156 /* SoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundImageView.swift; sourceTree = "<group>"; };
 		AD2EC359252B274A0027E156 /* RelaxingNatureSoundsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxingNatureSoundsApp.swift; sourceTree = "<group>"; };
 		B50660AA24ED9AC8008D196F /* Nature Sounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nature Sounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +118,7 @@
 				B50660C424EDA638008D196F /* AudioPlayer.swift */,
 				B53FDFD024EEEFC100AED9FE /* AudioStore.swift */,
 				B50660B124ED9AC8008D196F /* ContentView.swift */,
+				AD1E9708252E271B00C8DD64 /* AlarmView.swift */,
 				AD2EC357252B26310027E156 /* SoundImageView.swift */,
 				B5DA5C7424FD2B4D0061B97D /* GoogleAdBannerView.swift */,
 				B50660B324ED9ACB008D196F /* Assets.xcassets */,
@@ -250,6 +253,7 @@
 			files = (
 				B53FDFD124EEEFC100AED9FE /* AudioStore.swift in Sources */,
 				B5DA5C7524FD2B4D0061B97D /* GoogleAdBannerView.swift in Sources */,
+				AD1E9709252E271B00C8DD64 /* AlarmView.swift in Sources */,
 				AD2EC358252B26310027E156 /* SoundImageView.swift in Sources */,
 				B50660B224ED9AC8008D196F /* ContentView.swift in Sources */,
 				B540FB7824F01DDA002AD116 /* Triangle.swift in Sources */,
