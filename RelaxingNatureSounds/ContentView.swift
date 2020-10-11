@@ -50,13 +50,7 @@ struct ContentView: View {
             .edgesIgnoringSafeArea(.bottom)
             .navigationBarItems(leading: NavigationLink(destination: AlarmView(secondsUntilStop: $countdownSeconds, countdownStarted: $countdownStarted),
                                                         label: { Image(systemName: "clock").resizable().scaleEffect(1.4) }
-            ), trailing: Button(action: {
-                
-            }) {
-               Image(systemName: "info.circle")
-                    .resizable()
-                    .scaleEffect(1.4)
-            })
+            ))
             .navigationBarTitle("Sounds of Nature")
         }
         .environment(\.colorScheme, .dark)

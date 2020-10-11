@@ -25,7 +25,7 @@ struct SoundImageView: View {
                 .rotationEffect(.degrees(90.0))
                 .opacity(sound.currentlyPlaying ? 0.8 : 0)
                 .padding(.leading, -20)
-                .offset(x: 0, y: 5)
+                .offset(x: 3, y: 5)
             
             Text("\(sound.name)")
                 .font(Font.custom("Noteworthy", size: 50))
